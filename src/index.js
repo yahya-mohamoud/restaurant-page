@@ -1,4 +1,10 @@
-import {menu} from "./menu.js"
+import "./style.css"
+import { rendeMenu } from "./menu";
 
+const menuBtn = document.querySelector(".btnTwo")
 
-menu()
+about()
+
+menuBtn.addEventListener("click", () => {
+        rendeMenu()
+})
