@@ -5,6 +5,8 @@ import "./about.css"
     
 
     export function renderAbout () {
+        const aboutHead =document.createElement("div")
+        aboutHead.classList.add("aboutHead")
         const aboutTitle = document.createElement("div")
         aboutTitle.classList.add("aboutTitle")
 
@@ -19,7 +21,7 @@ import "./about.css"
         paraOne.innerText = `Welcome to Dhaqansoor restaurant, where culinary excellence meets warm hospitality. Our story is one of passion, dedication, and a commitment to delivering an exceptional dining experience to our cherished guests.` 
         aboutTitle.appendChild(paraOne)
 
-        content.appendChild(aboutTitle)
+        aboutHead.appendChild(aboutTitle)
 
         const journey = document.createElement("h2")
         journey.classList.add("journey")
@@ -28,7 +30,7 @@ import "./about.css"
 
         const journeyPara = document.createElement("p")
         journeyPara.classList.add("journeyPara")
-        journeyPara.innerText = `Founded in 2032, Dhaqansoor began as a dream to create a place where people could come together to enjoy delicious food in a welcoming atmosphere. Our founder, [Founder’s Name], envisioned a restaurant that would not only serve great meals but also become a cornerstone of the community.`
+        journeyPara.innerText = `Founded in 2032, Dhaqansoor began as a dream to create a place where people could come together to enjoy delicious food in a welcoming atmosphere. Our founder,Hebel, envisioned a restaurant that would not only serve great meals but also become a cornerstone of the community.`
         aboutTitle.appendChild(journeyPara)
 
         const workHrs = document.createElement("h3")
@@ -54,5 +56,7 @@ import "./about.css"
                                     jidka 20ka, Jijiga <br>
                                     Ethiopia
                                 </address>`
-       aboutTitle.appendChild(address)                         
+       aboutTitle.appendChild(address) 
+       
+       content.appendChild(aboutHead)
     }
