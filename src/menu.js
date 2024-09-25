@@ -2,7 +2,7 @@ import "./style.css"
 import muqmad from "./img/muqmad.png"
 import hilib from "./img/hilib.png"
 import soor from "./img/soor.png"
-
+import pasta from "./img/pasta.png"
 export function rendeMenu () {
     
     const content = document.querySelector("#content")
@@ -92,6 +92,39 @@ export function rendeMenu () {
 
     mainDiv.appendChild(mealThreeDiv)
 
-    content.appendChild(mainDiv)
+    const sndPart = document.createElement("div")
+    sndPart.classList.add("sndPart")
+    
 
+    const other = document.createElement("h2")
+    other.classList.add("other")
+    other.innerText= "Other Popular Somali Dishes"
+    sndPart.appendChild(other) 
+    mainDiv.appendChild(sndPart)
+
+    const mealFourDiv = document.createElement("div")
+    mealFourDiv.classList.add("mealFourDiv")
+    mainDiv.appendChild(mealFourDiv)
+    
+    const mealFour = document.createElement("h3")
+    mealFour.innerText = "Soor and Caano"
+    
+    const mealImg4 = document.createElement("img")
+    mealImg4.classList.add("hilib")
+    mealImg4.src = pasta;
+
+    const description4 = document.createElement("p")
+    description4.innerText = "This is one of the best  meals that  somali's eat, it's made of sliced and freid meat and laxoox is like bread baked flat"
+
+    const mealFourPrice = document.createElement("p")
+    mealFourPrice.innerText = "Price: $24.99"
+
+    mealFourDiv.appendChild(mealFour)
+    mealFourDiv.appendChild(mealImg4)
+    mealFourDiv.appendChild(description4)
+    mealFourDiv.appendChild(mealFourPrice)
+
+    mainDiv.appendChild(mealFourDiv)
+
+    content.appendChild(mainDiv)
 }

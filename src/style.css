@@ -39,12 +39,13 @@ button{
 
 
 
-.mealOneDiv, .mealTwoDiv, .mealThreeDiv{
+.mealOneDiv, .mealTwoDiv,
+ .mealThreeDiv, .mealFourDiv{
     margin: 10px;
     padding: 10px;
     width: 320px;
     height: 380px;
-    background-color: antiquewhite;
+    background:  radial-gradient(closest-side, #5a5509, #716b73, #058fb6);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -74,8 +75,10 @@ button{
 .mainDiv{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 100px repeat(2, 1fr);
-    object-fit: contain;
+    grid-template-rows: 100px  1fr 80px 1fr;
+    background-image: url(./img/somlaiRest.png);
+    object-fit: cover;
+    background-size: cover;
     align-items: start;
     justify-items: center;
     justify-content: center;
@@ -84,8 +87,21 @@ button{
 .titleDiv{
     grid-area: 1 / 2 / 2 / 3;
     justify-content: center;
+    color: white
 }
 
+.sndPart{
+    grid-area: 3 / 2 / 4 / 3;
+    color: white;
+}
+
+.mealFourDiv{
+    grid-area: 4/ 1/ 5/ 2;
+}
 h3{
     margin-bottom: 10px;
+}
+
+nav{
+    background: linear-gradient(90deg, rgb(33, 42, 54), rgb(29, 4, 50), rgb(2, 30, 1));
 }

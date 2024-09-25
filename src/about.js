@@ -1,4 +1,5 @@
 import "./about.css"
+import restBg from"./img/restBg.png"
 
     const content = document.querySelector("#content")
     const aboutBtn = document.querySelector(".btnThree")
@@ -7,6 +8,7 @@ import "./about.css"
     export function renderAbout () {
         const aboutHead =document.createElement("div")
         aboutHead.classList.add("aboutHead")
+        aboutHead.setAttribute("style", `background-image: url(${restBg})`)
         const aboutTitle = document.createElement("div")
         aboutTitle.classList.add("aboutTitle")
 
