@@ -1,0 +1,22 @@
+
+.aboutTitle{
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    background-image: url(./img/muqmad.png);
+    object-fit: contain;
+}
+
+p{
+    margin: 30px 30px;
+    max-width: 55ch;
+}
+
+.hrsDiv p{
+    margin: 0px;
+}
+
+.hrsDiv:last-child{
+    margin-bottom: 20px;
+}
