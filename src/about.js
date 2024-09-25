@@ -55,8 +55,8 @@ import restBg from"./img/restBg.png"
                               <address>
                                 visit Us at: <br>
                                     wadada suuqa <br>
-                                    jidka 20ka, Jijiga <br>
-                                    Ethiopia
+                                    jidka 20ka, Bari <br>
+                                    Aduunka
                                 </address>`
        aboutTitle.appendChild(address) 
        

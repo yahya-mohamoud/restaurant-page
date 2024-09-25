@@ -34,7 +34,7 @@ export function rendeMenu () {
     mealImg1.classList.add("muqmad")
     
     const mealOnePrice = document.createElement("p")
-    mealOnePrice.innerText = "Price: $14.99"
+    mealOnePrice.innerHTML = "<p><strong>Price: $24.99</strong></p>"
     const description1 = document.createElement("P")
     description1.innerText = "This is one of the best  meals that  somali's eat, it's made of sliced and freid meat and laxoox is like bread baked flat"
 
@@ -59,7 +59,7 @@ export function rendeMenu () {
     description2.innerText = "This is one of the best  meals that  somali's eat, it's made of sliced and freid meat and laxoox is like bread baked flat"
 
     const mealTwoPrice = document.createElement("p")
-    mealTwoPrice.innerText = "Price: $34.99"
+    mealTwoPrice.innerHTML = "<p><strong>Price: $34.99</strong></p>"
 
     mealTwoDiv.appendChild(mealTwo)
     mealTwoDiv.appendChild(mealImg2)
@@ -83,7 +83,7 @@ export function rendeMenu () {
     description3.innerText = "This is one of the best  meals that  somali's eat, it's made of sliced and freid meat and laxoox is like bread baked flat"
 
     const mealThreePrice = document.createElement("p")
-    mealThreePrice.innerText = "Price: $24.99"
+    mealThreePrice.innerHTML = "<p><strong>Price: $14.99</strong></p>"
 
     mealThreeDiv.appendChild(mealThree)
     mealThreeDiv.appendChild(mealImg3)
@@ -107,7 +107,7 @@ export function rendeMenu () {
     mainDiv.appendChild(mealFourDiv)
     
     const mealFour = document.createElement("h3")
-    mealFour.innerText = "Soor and Caano"
+    mealFour.innerText = "Pasta and Sugo"
     
     const mealImg4 = document.createElement("img")
     mealImg4.classList.add("hilib")
@@ -117,7 +117,7 @@ export function rendeMenu () {
     description4.innerText = "This is one of the best  meals that  somali's eat, it's made of sliced and freid meat and laxoox is like bread baked flat"
 
     const mealFourPrice = document.createElement("p")
-    mealFourPrice.innerText = "Price: $24.99"
+    mealFourPrice.innerHTML = "<p><strong>Price: $24.99</strong></p>"
 
     mealFourDiv.appendChild(mealFour)
     mealFourDiv.appendChild(mealImg4)
@@ -125,6 +125,30 @@ export function rendeMenu () {
     mealFourDiv.appendChild(mealFourPrice)
 
     mainDiv.appendChild(mealFourDiv)
+
+    const mealFiveDiv = document.createElement("div")
+    mealFiveDiv.classList.add("mealFiveDiv")
+    mainDiv.appendChild(mealFiveDiv)
+    
+    const mealFive = document.createElement("h3")
+    mealFive.innerText = "Pasta and Sugo"
+    
+    const mealImg5 = document.createElement("img")
+    mealImg5.classList.add("hilib")
+    mealImg5.src = pasta;
+
+    const description5 = document.createElement("p")
+    description5.innerText = "This is one of the best  meals that  somali's eat, it's made of sliced and freid meat and laxoox is like bread baked flat"
+
+    const mealFivePrice = document.createElement("p")
+    mealFivePrice.innerHTML = "<p><strong>Price: $24.99</strong></p>"
+
+    mealFiveDiv.appendChild(mealFive)
+    mealFiveDiv.appendChild(mealImg5)
+    mealFiveDiv.appendChild(description5)
+    mealFiveDiv.appendChild(mealFivePrice)
+
+    mainDiv.appendChild(mealFiveDiv)
 
     content.appendChild(mainDiv)
 }
