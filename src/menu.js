@@ -3,6 +3,8 @@ import muqmad from "./img/muqmad.png"
 import hilib from "./img/hilib.png"
 import soor from "./img/soor.png"
 import pasta from "./img/pasta.png"
+import digag from "./img/digag.png"
+
 export function rendeMenu () {
     
     const content = document.querySelector("#content")
@@ -131,11 +133,11 @@ export function rendeMenu () {
     mainDiv.appendChild(mealFiveDiv)
     
     const mealFive = document.createElement("h3")
-    mealFive.innerText = "Pasta and Sugo"
+    mealFive.innerText = "Digag"
     
     const mealImg5 = document.createElement("img")
     mealImg5.classList.add("hilib")
-    mealImg5.src = pasta;
+    mealImg5.src = digag;
 
     const description5 = document.createElement("p")
     description5.innerText = "This is one of the best  meals that  somali's eat, it's made of sliced and freid meat and laxoox is like bread baked flat"

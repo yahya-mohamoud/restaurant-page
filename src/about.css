@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'charmregular';
+    src: url('./fonts/charm-regular-webfont.woff2') format('woff2'),
+         url('./fonts/charm-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 
 .aboutTitle{
     text-align: center;
@@ -27,4 +36,74 @@
 .hrsDiv p{
     margin: 0px;
     font-size: 16px;
+}
+
+.resName{
+}
+
+.homeDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.homePara{
+    margin: 30px 0px 10px;
+    max-width: 75ch;
+    word-spacing: 0.2rem;
+    /* font-family: 'charmregular'; */
+    text-align: center;
+}
+
+.paraOne, .journeyPara{
+    font-family: 'charmregular';
+    word-spacing: 0.2rem;
+    margin: 0 10px;
+    max-width: 55ch;
+    font-size: 18px;
+}
+
+.hrsH3{
+    font-family: 'charmregular';
+    font-size: 26px;
+}
+
+ul{
+    list-style: none;
+    margin: 10px;
+
+}
+
+hr{
+    width: 400px;
+    margin: 10px 0 10px;
+    height: 4px;
+    background-color: rgba(43, 111, 113, 0.776);
+    border-radius: 2px;
+    border: none;
+}   
+
+.location{
+    margin: 20px;
+    font-style: italic;
+}
+
+.homeDiv{
+    background-color: rgba(0, 0, 0, 0.651);
+
+}
+
+.home{
+    background-image: url(./img/home4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* object-fit: contain; */
+    color: white;
+}
+
+.contDiv{
+    font-style: italic;
+    margin: 0;
+    padding: 0;
 }
