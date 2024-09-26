@@ -79,7 +79,7 @@ hr{
     width: 400px;
     margin: 10px 0 10px;
     height: 4px;
-    background-color: rgba(43, 111, 113, 0.776);
+    background-color: rgb(153, 204, 248);
     border-radius: 2px;
     border: none;
 }   
@@ -89,8 +89,10 @@ hr{
     font-style: italic;
 }
 
+
+
 .homeDiv{
-    background-color: rgba(0, 0, 0, 0.651);
+    background-color: rgba(2, 0, 3, 0.607);
 
 }
 
@@ -106,4 +108,13 @@ hr{
     font-style: italic;
     margin: 0;
     padding: 0;
+}
+
+.contDiv, .location{
+    background-color: rgba(0, 0, 0, 0.484);
+    padding: 20px 40px;
+    width: 500px;
+    height: 200px;
+    border-radius: 20px;
+    text-align: center;
 }
